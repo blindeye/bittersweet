@@ -67,7 +67,6 @@ class LalaBotDaemon(Daemon):
 		api = tweepy.API(auth)
 
 		voice = read_voice()
-		g=open("/tmp/lalasweetbot.log", "w")
 		while True:
 			tweet=rd.choice(voice)
 			try:
